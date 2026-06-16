@@ -699,6 +699,7 @@ h1, h2, h3 {
 }
 
 .c-kw  { color: #ff7b72; }
+.c-kn  { color: #febc2e; }
 .c-fn  { color: #79c0ff; }
 .c-str { color: #a5d6ff; }
 .c-cm  { color: #8b949e; font-style: italic; }

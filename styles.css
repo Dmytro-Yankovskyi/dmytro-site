@@ -104,8 +104,8 @@ h1, h2, h3 {
 /* HERO */
 .hero {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 7fr 3fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 120px 8% 80px;
   position: relative;
@@ -148,7 +148,7 @@ h1, h2, h3 {
 .hero-sub {
   font-size: clamp(16px, 2vw, 20px);
   color: var(--text-dim);
-  max-width: 520px;
+  max-width: 670px;
   line-height: 1.7;
   margin-bottom: 40px;
 }
@@ -636,7 +636,7 @@ h1, h2, h3 {
 /* CODE WINDOW */
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 7fr 3fr;
   grid-template-rows: auto auto;
   gap: 40px;
   align-items: center;
@@ -702,7 +702,7 @@ h1, h2, h3 {
 .c-kn  { color: #febc2e; }
 .c-fn  { color: #79c0ff; }
 .c-str { color: #a5d6ff; }
-.c-cm  { color: #8b949e; font-style: italic; }
+.c-cm  { color: #28c840; font-style: italic; }
 .cursor { color: var(--accent); animation: blink 1s infinite; }
 
 @keyframes blink {

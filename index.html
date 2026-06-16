@@ -368,15 +368,14 @@
 <script>
 // Анімація коду в хеді
 const lines = [
-  '<span class="c-kw">Процедура</span> ВиконатиОбмін()',
-  '  <span class="c-cm">// Завантаження змін з вузла</span>',
-  '  <span class="c-fn">ВыгрузитьИзменения</span>(УзелОбміну);',
-  '  ',
-  '  <span class="c-kw">Якщо</span> ФайлОбміну.Існує() <span class="c-kw">Тоді</span>',
-  '    <span class="c-fn">ЗавантажитиДані</span>(ФайлОбміну);',
-  '    <span class="c-fn">Повідомити</span>(<span class="c-str">"Обмін завершено ✓"</span>);',
-  '  <span class="c-kw">КінецьЯкщо</span>;',
-  '<span class="c-kw">КінецьПроцедури</span>',
+  '<span class="c-cm">// Monday morning routine</span>',
+  '<span class="c-kw">&НаКлієнті</span>',
+  '<span class="c-kw">Procedure</span> <span class="c-fn">PresTheBigRedButton</span>()',
+  '  <span class="c-fn">CheckEmail</span>();',
+  '  <span class="c-fn">AssignTasks</span>();',
+  '  <span class="c-fn">CheckTaskCompletion</span>();',
+  '  <span class="c-cm">// повторити завтра</span>',
+  '<span class="c-kw">EndProcedure</span>;',
 ];
 
 const block = document.getElementById('codeBlock');

@@ -104,8 +104,8 @@ h1, h2, h3 {
 /* HERO */
 .hero {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
   justify-content: center;
   padding: 120px 8% 80px;
   position: relative;

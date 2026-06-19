@@ -435,7 +435,7 @@ const counterObserver = new IntersectionObserver(entries => {
       const el = entry.target;
       const target = +el.getAttribute('data-target');
       let count = 0;
-      const duration = 1200;
+      const duration = 2400;
       const step = target / (duration / 16);
 
       const update = () => {

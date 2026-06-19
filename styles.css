@@ -372,7 +372,6 @@ h1, h2, h3 {
 
 .btn-service {
   display: inline-block;
-  margin-top: auto;
   padding: 10px 20px;
   border: 1px solid var(--accent-dim);
   color: var(--accent);

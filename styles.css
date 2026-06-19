@@ -655,6 +655,14 @@ h1, h2, h3 {
   border-top: 1px solid var(--border);
   padding-top: 16px;
   margin-top: auto;
+  text-align: center;
+}
+
+.service-price-secondary {
+  font-size: 14px;
+  color: var(--accent);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {

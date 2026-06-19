@@ -436,10 +436,21 @@ h1, h2, h3 {
   width: 100%;
   aspect-ratio: 3/4;
   object-fit: cover;
-  object-position: top center;
+  object-position: 100% 20%;
   border-radius: 12px;
   filter: grayscale(20%);
   border: 1px solid var(--border);
+}
+
+@media (max-width: 1200px) {
+  .tag {
+    font-size: 12px;
+    padding: 4px 11px;
+  }
+  
+  .about-text p {
+    font-size: 15px;
+  }	
 }
 
 @media (max-width: 768px) {
@@ -450,6 +461,7 @@ h1, h2, h3 {
   
   .about-grid {
     grid-template-columns: 1fr;
+	gap: 20px;
   }
   .about-photo {
     margin-top: 0;

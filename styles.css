@@ -410,6 +410,7 @@ h1, h2, h3 {
   margin-top: 24px;
 }
 
+
 /* ==========================================================
    ABOUT
    ========================================================== */
@@ -428,9 +429,7 @@ h1, h2, h3 {
 }
 
 .about-photo {
-  /* pulls the photo up so its top aligns with the h2 baseline
-     (h2 has margin-bottom: 56px which pushes .about-grid down) */
-  margin-top: -56px;
+  margin-top: 0;
 }
 
 .photo-img {
@@ -444,6 +443,11 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
+  .tag {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+  
   .about-grid {
     grid-template-columns: 1fr;
   }
@@ -454,6 +458,9 @@ h1, h2, h3 {
     height: 300px;
     aspect-ratio: unset;
     object-fit: cover;
+  }
+  .about-text p {
+    font-size: 14px;
   }
 }
 

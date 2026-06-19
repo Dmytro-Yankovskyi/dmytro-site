@@ -60,11 +60,11 @@
 
 	  <div class="hero-stats">
 		<div class="hero-stat">
-		  <span class="mono stat-num">10+</span>
+		  <span class="mono stat-num"data-target="10">0</span>
 		  <span class="stat-label">років у 1С/BAF</span>
 		</div>
 		<div class="hero-stat">
-		  <span class="mono stat-num">50+</span>
+		  <span class="mono stat-num"data-target="50">0</span>
 		  <span class="stat-label">проектів</span>
 		</div>
 		<div class="hero-stat">
@@ -426,6 +426,33 @@ window.addEventListener('scroll', () => {
   navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
   document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 50);
 });
+
+// Лічильники в hero-stats
+const counters = document.querySelectorAll('.stat-num[data-target]');
+const counterObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = +el.getAttribute('data-target');
+      let count = 0;
+      const duration = 1200;
+      const step = target / (duration / 16);
+
+      const update = () => {
+        count += step;
+        if (count < target) {
+          el.innerText = Math.floor(count);
+          requestAnimationFrame(update);
+        } else {
+          el.innerText = target + "+";
+        }
+      };
+      update();
+      counterObserver.unobserve(el);
+    }
+  });
+});
+counters.forEach(el => counterObserver.observe(el));
 </script>
 
 </body>

@@ -25,7 +25,10 @@
   --body:      'Inter', sans-serif;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
 
 body {
   font-family: var(--body);
@@ -372,9 +375,11 @@ h1, h2, h3 {
 
 .btn-service {
   display: inline-block;
+  margin-top: auto;
   padding: 10px 20px;
-  border: 1px solid var(--accent-dim);
-  color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+  border: none;
   border-radius: 8px;
   text-decoration: none;
   font-size: 13px;
@@ -384,9 +389,8 @@ h1, h2, h3 {
 }
 
 .btn-service:hover {
-  background: var(--accent);
-  color: #fff;
-  border-color: var(--accent);
+  background: #3d7ae8;
+  transform: translateY(-2px);
 }
 
 /* ==========================================================
@@ -750,20 +754,23 @@ h1, h2, h3 {
 }
 
 .project-toggle {
-  margin-top: 16px;
+  margin-top: 20px;
   background: none;
-  border: none;
+  border: 1px solid var(--accent-dim);
   color: var(--accent);
   font-size: 13px;
   font-family: var(--mono);
   cursor: pointer;
-  padding: 0;
+  padding: 8px 16px;
+  border-radius: 6px;
   text-align: left;
   transition: 0.2s;
+  width: 100%;
 }
 
 .project-toggle:hover {
-  color: var(--text);
+  background: rgba(79,142,247,0.08);
+  border-color: var(--accent);
 }
 
 .project-tag {

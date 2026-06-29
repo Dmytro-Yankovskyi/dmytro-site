@@ -686,6 +686,8 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+  align-items: start;
+  grid-auto-rows: auto;
 }
 
 .project-card {
@@ -696,6 +698,7 @@ h1, h2, h3 {
   transition: 0.25s;
   display: flex;
   flex-direction: column;
+   height: fit-content;
 }
 
 .project-card h3 {
@@ -792,10 +795,6 @@ h1, h2, h3 {
   text-align: left;
   transition: 0.2s;
   width: 100%;
-}
-
-.project-card:has(.project-details.open) .project-toggle {
-  margin-top: auto;
 }
 
 .project-toggle:hover {

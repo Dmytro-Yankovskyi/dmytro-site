@@ -27,7 +27,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
 }
 
 body {
@@ -51,7 +50,6 @@ h1, h2, h3 {
    ========================================================== */
 .section {
   padding: 100px 8%;
-  scroll-snap-align: start;
 }
 
 .section.dark {
@@ -149,7 +147,6 @@ h1, h2, h3 {
 .hero {
   min-height: 100vh;
   display: grid;
-  scroll-snap-align: start;
   grid-template-columns: 1.3fr 1fr;
   gap: 56px;
   align-items: center;
@@ -615,7 +612,7 @@ h1, h2, h3 {
 }
 
 .service-list li::before {
-  content: '—';
+  content: '\2014';
   position: absolute;
   left: 0;
   color: var(--accent-dim);
@@ -714,7 +711,6 @@ h1, h2, h3 {
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 20px;
-  flex: 1;
 }
 
 .project-result {
@@ -765,7 +761,7 @@ h1, h2, h3 {
 }
 
 .project-details ul li::before {
-  content: '—';
+  content: '\2014';
   position: absolute;
   left: 0;
   color: var(--accent-dim);
@@ -784,7 +780,7 @@ h1, h2, h3 {
 }
 
 .project-toggle {
-  margin-top: 20px;
+  margin-top: auto;
   background: none;
   border: 1px solid var(--accent-dim);
   color: var(--accent);

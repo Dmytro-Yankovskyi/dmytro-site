@@ -437,7 +437,7 @@ h1, h2, h3 {
   width: 100%;
   aspect-ratio: 3/4;
   object-fit: cover;
-  object-position: 100% 10%;
+  object-position: 100% 50%;
   border-radius: 12px;
   filter: grayscale(20%);
   border: 1px solid var(--border);

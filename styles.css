@@ -430,7 +430,8 @@ h1, h2, h3 {
 }
 
 .about-photo {
-  align-self: stretch;
+  /*align-self: stretch;*/
+  margin-top: 0;
 }
 
 .photo-img {
@@ -470,7 +471,9 @@ h1, h2, h3 {
 	gap: 20px;
   }
   .about-photo {
-    align-self: stretch;
+   /*align-self: stretch;*/
+   margin-top: 0;
+	
   }
   .photo-img {
     height: 300px;

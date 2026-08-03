@@ -430,17 +430,18 @@ h1, h2, h3 {
 }
 
 .about-photo {
-  margin-top: 0;
+  align-self: stretch;
 }
 
 .photo-img {
   width: 100%;
-  aspect-ratio: 3/4;
+  height: 100%;
   object-fit: cover;
-  object-position: 100% 50%;
+  object-position: top center;
   border-radius: 12px;
   filter: grayscale(20%);
   border: 1px solid var(--border);
+  display: block;
 }
 
 @media (max-width: 1200px) {
@@ -470,7 +471,7 @@ h1, h2, h3 {
 	gap: 20px;
   }
   .about-photo {
-    margin-top: 0;
+    align-self: stretch;
   }
   .photo-img {
     height: 300px;
